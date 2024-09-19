@@ -5,57 +5,26 @@
     
 </style>
 <body>
-    <header>
+    <div class="page">
+    <navigation>
+        <a href="#aboutus" id="about">{ About Us }</a><break></break>
+        <a href="#solutions" id="solution">&lt; Solutions &gt;</a><break></break>
+        <a href="#contactus" id="contact">( Contact )</a>
+    </navigation>
+        <!--
         <company>
             <span style="font-family:robotomedium">DOM</span><span>forge</span>
         </company>
-        <navigation>
-            <div class="shape" style="background-color:#4bbd31; padding-right:1vh;">
-                <a href="">Contact</a>
-            </div>
-            <div class="shape" style="right:10vh;width:10vh; background-color:#d8d71a;">
-                <a href="">History</a>
-            </div>
-            <div class="shape" style="padding-right:1vh;width:10vh;right:20vh;background-color:#fa502f;">
-                <a href="">About</a>
-            </div>
-        </navigation>
+        <div class="triangle"></div>
+        <div class="triangle" style="bottom:7vh;animation-delay:.3s;"></div>
+        <div class="triangle" style="bottom:12vh;animation-delay:.6s;"></div>
+    -->
     </div>
-</header>
-<div id="typer">
-    <div class="solutions">
-        
-    </div>
-    <div class="solutions">
-        
-    </div>
-    <div class="solutions">
-        
-    </div>
-    <div class="solutions">
-        
-    </div>
-    <div class="solutions">
-        
-    </div>
-</div>
-<div class="section" id="section1">
+    <div class="page" id="aboutus" style="top:100vh; background-color:red;"></div>
+    <div class="page" id="solutions" style="top:200vh; "></div>
+    <div class="page" id="contactus" style="top:300vh;  background-color:red;"></div>
 
-</div>
-<footer>
-</footer>
+
+
+
 </body>
-<script>
-window.onscroll = function (e) {
-  var vertical_position = 0;
-  if (pageYOffset)//usual
-    vertical_position = pageYOffset;
-  else if (document.documentElement.clientHeight)//ie
-    vertical_position = document.documentElement.scrollTop;
-  else if (document.body)//ie quirks
-    vertical_position = document.body.scrollTop;
-
-  var your_div = document.getElementById('section1');
-  your_div.style.right = (vertical_position + 200) + 'px';
-}
-</script>
