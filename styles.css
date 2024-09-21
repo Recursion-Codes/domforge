@@ -42,16 +42,16 @@ body{
 
 ::-webkit-scrollbar {
     width: 1vh;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: white;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: black;
-  }
-  
+}
+
 
 .page{
     min-height:100vh;
@@ -69,20 +69,17 @@ company{
     left:0vh;
 }
 
-navigation {
+#navigation {
     font-family:robotolight;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:-10vh;
-    position:absolute;
-    top:50%;
-    width:100vw;
+    position:fixed;
+    top:1vh;
+    right:1vh;
+    width:auto;
     z-index:2;
+    text-align:center;
 }
 
-navigation a{
+#navigation a{
     color:black;
     text-decoration:none;
     font-size:3vh;
@@ -124,5 +121,244 @@ break{
     100% {
         translate: 0 0vh;
         opacity:0;
+    }
+}
+
+#silhouette{
+    width:40vw;
+    height:30vh;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url(assets/silhouette.png);
+    position:absolute;
+    margin-top:-10vh;
+    left:2vw;
+    top:50%;
+}
+.text{
+    width:40vw;
+    height:40vh;
+    background-size:contain;
+    background-repeat:no-repeat;
+    position:absolute;
+    margin-top:-20vh;
+    right:10vw;
+    top:50%;
+    font-size:3vh;
+}
+.page a{
+    color:black;
+    text-decoration:none;
+}
+titletext{
+    color:black;
+    font-size:4vh;
+}
+#landingtext{
+    width:;
+    height:100vh;
+    text-align:center;
+    font-size:6vh;
+    position:absolute;
+    top:50%;
+    margin-top:-12vh;
+}
+#sun{
+    background-image:url(assets/sun.png);
+    background-size:contain;
+    width:30vh;
+    height:30vh;
+    position:absolute;
+    top:15vh;
+    left:5vw;
+    animation:rotate 15s infinite linear;
+}
+.line{
+    background-color:black;
+    width:.2vh;
+    height:3vh;
+    position:absolute;
+}
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+        
+    }
+}
+
+.backgroundtext{
+    position:absolute;
+    filter:blur(4px);
+    font-size:4vh;
+}
+.backgroundtext a{
+    color:rgb(0, 0, 0);
+}
+
+
+.contact-description {
+    color: rgb(107 114 128);
+}
+
+.form-group-container {
+    display: grid;
+    gap: 1vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 1vh;
+}
+
+.contact-form{
+    font-size:2.5vh;
+}
+
+.form-input,
+.form-textarea {
+    padding: 1vh;
+    border: .1vh solid black;
+    display: flex;
+    height: 4vh;
+    width: 100%;
+    border-radius: .2vh;
+    font-size: 1.5vh;
+    line-height: 1vh;
+    font-family:robotolight;
+}
+
+
+.form-textarea {
+    min-height: 10vh;
+}
+
+.form-submit {
+    width: 100%;
+    margin-top: 1.5vh;
+    background-color: white;
+    color: black;
+    padding: 2vh 1vh;
+    border-radius: .1vh;
+    cursor:pointer;
+    font-family:robotolight;
+    font-size:2vh;
+}
+
+#solutions a{
+    pointer-events:none;
+}
+
+.contact-section{
+    left:25vw;
+    top:30vh;
+    position:absolute;
+    width:20vw;
+}
+
+#solutions{
+    top:180vh;
+}
+#contactus{
+    top:280vh;
+}
+
+#contactus .text{
+    float:left;left:47vw;width:30vw;
+}
+@media (orientation: portrait) {
+
+    .text{
+        top:40vh;
+    }
+    #sun{
+        width:20vh;
+        height:20vh;
+        background-repeat:no-repeat;
+        top:5vh;
+    }
+    #silhouette{
+        top:35vh;
+        width:100vw
+    }
+    #aboutus .text{
+        width:80vw;
+        left:10vw;
+        top:60vh;
+    }
+    #solutions .text{
+        top:0vh;
+        position:absolute;
+    }
+    #solutions{
+        top:200vh;
+    }
+    #solutions a{
+        opacity:0;
+    }
+    #solutions .text{
+        top:40vh;
+    }
+    #contactus .text{
+        top:70vh;
+    }
+    #contactus .contact-section{
+        top:51vh;
+        left:10vw;
+    }
+    #solutions .text{
+        width:40vw;
+        left:30vw;}
+
+    .form-input,
+    .form-textarea,
+    .form-submit {
+        width: 100%;
+    }
+    #landingtext{
+        text-align:center;
+        width:100%;
+        font-size:4vh;
+    }
+    .typewrite{
+        font-size:4vh;
+    }
+    .text span{
+        display:none;
+        visibility:hidden;
+    }
+    #solutions .backgroundtext{
+        display:none;
+        visibility:hidden;
+    }
+    #solutions .text{
+        width:80vw;
+        left:10vw;
+    }
+    #solutions .text span{
+        display:none;
+    }
+    #contactus .text span{
+        display:none;
+    }
+    #contactus{
+        top:300vh;
+    }
+    #contactus .text{
+        width:80vw;
+        left:10vw;
+        top:35vh;
+    }
+    #contactus .contact-section{
+        width:70vw;
+        left:15vw;
+        
     }
 }
