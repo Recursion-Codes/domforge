@@ -155,7 +155,7 @@ titletext{
     font-size:4vh;
 }
 #landingtext{
-    width:;
+    width:100vw;
     height:100vh;
     text-align:center;
     font-size:6vh;
@@ -271,7 +271,13 @@ titletext{
 }
 
 #contactus .text{
-    float:left;left:47vw;width:30vw;
+    float:left;
+    left:47vw;
+    width:30vw;
+}
+#solutions .text{
+    left:30vw;
+
 }
 @media (orientation: portrait) {
 
@@ -289,22 +295,21 @@ titletext{
         width:100vw
     }
     #aboutus .text{
-        width:80vw;
-        left:10vw;
-        top:60vh;
+        width:90vw;
+        left:5vw;
+        top:65vh;
     }
     #solutions .text{
-        top:0vh;
+        top:40vh;
         position:absolute;
+        width:80vw;
+        left:10vw;
     }
     #solutions{
         top:200vh;
     }
     #solutions a{
         opacity:0;
-    }
-    #solutions .text{
-        top:40vh;
     }
     #contactus .text{
         top:70vh;
@@ -313,9 +318,6 @@ titletext{
         top:51vh;
         left:10vw;
     }
-    #solutions .text{
-        width:40vw;
-        left:30vw;}
 
     .form-input,
     .form-textarea,
@@ -337,10 +339,6 @@ titletext{
     #solutions .backgroundtext{
         display:none;
         visibility:hidden;
-    }
-    #solutions .text{
-        width:80vw;
-        left:10vw;
     }
     #solutions .text span{
         display:none;
